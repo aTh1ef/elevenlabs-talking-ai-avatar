@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Speaking Avatar</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="loader"></div>
+        <p>Loading your avatar...</p>
+    </div>
+    
+    <div id="scene-container"></div>
+    
+    <div id="speech-bubble"></div>
+    
+    <div id="status">Status: Ready</div>
+    
+    <div id="debug"></div>
+
+    <div id="controls"></div>
+    
+    <div id="audio-debug">
+        <canvas id="audio-canvas"></canvas>
+    </div>
+
+    <div id="error-message">
+        <h3>Error</h3>
+        <p id="error-text">An error occurred.</p>
+        <button id="dismiss-error">Dismiss</button>
+    </div>
+
+    
+    
+    <div id="input-container">
+        <select id="voice-select" style="display: none;"></select>
+        <input type="text" id="text-input" placeholder="Type what you want the avatar to say..." autofocus>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
